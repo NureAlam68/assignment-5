@@ -52,12 +52,12 @@
         </nav>
         <div class="flex mt-4 lg:mt-[80px] justify-center gap-4">
             <div>
-                <button class="px-6 py-3 bg-color-one lg:px-[32px] lg:py-[16px] text-xl font-semibold rounded-lg">
+                <button class="px-6 py-3 lg:px-[32px] lg:py-[16px] text-xl font-medium border border-[#1111114D] rounded-lg text-[#111111B3]">
                     Donation
                 </button>
             </div>
             <div>
-                <button class="px-6 py-3 bg-color-one lg:px-[32px] lg:py-[16px] text-xl font-medium text-[#111111B3] rounded-lg">
+                <button class="px-6 py-3 lg:px-[32px] lg:py-[16px] text-xl font-medium border border-[#1111114D] text-[#111111B3] rounded-lg">
                     History
                 </button>
             </div>
@@ -91,6 +91,29 @@
                 <button class="px-8 py-4 rounded-lg bg-color-one w-full mt-4 text-xl font-semibold">
                     Donate Now
                 </button>
+                <dialog id="my_modal_1" class="modal">
+                    <form method="dialog"
+                        class="modal-box px-5 pt-4 pb-10 flex flex-col justify-center items-center">
+                        <h3 class="font-bold text-5xl">
+                            Congrates!
+                        </h3>
+                        <div class="mt-4">
+                            <img class="h-[40px]" src="assets/coin.png" alt="">
+                        </div>
+                        <div class="text-center mt-5">
+                            <p class="font-semibold text-xl text-[#111111B3]">
+                                You Have Donated for Humankind
+                            </p>
+                            <h3 class="mt-4 text-2xl font-bold">
+                                Successfully
+                            </h3>
+                        </div>
+                        <button id=""
+                            class="btn px-6 pt-2 pb-3 mt-6 text-xl">
+                            Close confirmation
+                        </button>
+                    </form>
+                </dialog>
             </div>
         </section>
         <section class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8 p-5 lg:p-8 border border-[#1111111a] rounded-2xl">
