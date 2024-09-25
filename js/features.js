@@ -31,3 +31,8 @@ document.getElementById('clear-input').addEventListener('click', function() {
 document.getElementById('clear-input-feni').addEventListener('click', function() {
     clearInputFields('feni-donate-input');
 });
+
+
+document.getElementById('clear-input-aid').addEventListener('click', function() {
+    clearInputFields('aid-donate-input')
+})

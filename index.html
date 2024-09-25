@@ -192,11 +192,34 @@
                     <p class="text-[#111111B3] text-base font-light mt-4">
                         The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                     </p>
-                    <input class="p-[18px] border rounded-lg w-full mt-6 font-light text-base text-[#11111166] border-[#1111111a]" type="text" placeholder="Write Donation Amount">
+                    <input id="aid-donate-input" autocomplete="off" class="p-[18px] border rounded-lg w-full mt-6 font-medium text-base border-[#1111111a]" type="text" placeholder="Write Donation Amount">
                     <br>
-                    <button class="px-8 py-4 rounded-lg bg-color-one w-full mt-4 text-xl font-semibold">
+                    <button id="aid-donate-btn" onclick="my_modal_3.showModal()" class="px-8 py-4 rounded-lg bg-color-one w-full mt-4 text-xl font-semibold">
                         Donate Now
                     </button>
+                    <dialog id="my_modal_3" class="modal">
+                        <form method="dialog"
+                            class="modal-box px-5 pt-4 pb-10 flex flex-col justify-center items-center">
+                            <h3 class="font-bold text-[36px]">
+                                Congrates!
+                            </h3>
+                            <div class="mt-4">
+                                <img class="h-[40px]" src="assets/coin.png" alt="">
+                            </div>
+                            <div class="text-center mt-5">
+                                <p class="font-semibold text-xl text-[#111111B3]">
+                                    You Have Donated for Humankind
+                                </p>
+                                <h3 class="mt-4 text-2xl font-bold">
+                                    Successfully
+                                </h3>
+                            </div>
+                            <button id="clear-input-aid"
+                                class="btn px-6 pt-2 pb-3 mt-6 text-xl">
+                                Close confirmation
+                            </button>
+                        </form>
+                    </dialog>
                 </div>
             </section>
         </section>

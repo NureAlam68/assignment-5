@@ -48,9 +48,9 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
 
     const addMoneyFeni = getInputValueById('feni-donate-input');
     const feniBalance = getTextValueById('feni-balance');
-    const accountBalanceF = getTextValueById('account-balance');
+    const accountBalanceFeni = getTextValueById('account-balance');
 
-    if(isNaN(addMoneyFeni) || addMoneyFeni > accountBalanceF || addMoneyFeni <= 0 || addMoneyFeni === '') {
+    if(isNaN(addMoneyFeni) || addMoneyFeni > accountBalanceFeni || addMoneyFeni <= 0 || addMoneyFeni === '') {
         alert('Invalid donation amount !');
         return;
     }
@@ -58,8 +58,8 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
         let newFeniBalance = feniBalance + addMoneyFeni;
         document.getElementById('feni-balance').innerText = newFeniBalance;
 
-        let newAccountBalanceF = accountBalanceF - addMoneyFeni;
-        document.getElementById('account-balance').innerText = newAccountBalanceF;
+        let newAccountBalanceFeni = accountBalanceFeni - addMoneyFeni;
+        document.getElementById('account-balance').innerText = newAccountBalanceFeni;
 
         const div = document.createElement('div');
         div.classList.add('p-5', 'lg:p-8', 'border', 'border-[#1111111A]', 'rounded-[16px]');
@@ -75,4 +75,44 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
 
         document.getElementById('history-section').appendChild(div);
     }
-})
+});
+
+
+
+
+// for  Quota Movement
+
+
+document.getElementById('aid-donate-btn').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const addMoneyAid = getInputValueById('aid-donate-input');
+    const aidBalance = getTextValueById('aid-balance');
+    const accountBalanceAid = getTextValueById('account-balance');
+
+    if(isNaN(addMoneyAid) || addMoneyAid > accountBalanceAid || addMoneyAid <= 0 || addMoneyAid === '') {
+        alert('Invalid donation amount !');
+        return;
+    }
+    else {
+        let newAidBalance = aidBalance + addMoneyAid;
+        document.getElementById('aid-balance').innerText = newAidBalance;
+
+        let newAccountBalanceAid = accountBalanceAid - addMoneyAid;
+        document.getElementById('account-balance').innerText = newAccountBalanceAid;
+
+        const div = document.createElement('div');
+        div.classList.add('p-5', 'lg:p-8', 'border', 'border-[#1111111A]', 'rounded-[16px]');
+        div.innerHTML = `
+            <h3 class="text-xl font-bold">
+                    ${addMoneyAid} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh
+            </h3>
+            <p id="date-time" class="mt-4 text-base font-light text-[#111111B3]">
+            </p>
+        `
+        let newDate = new Date();
+        div.querySelector('#date-time').innerText = "Date: " + newDate;
+
+        document.getElementById('history-section').appendChild(div);
+    }
+});
