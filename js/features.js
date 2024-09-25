@@ -25,4 +25,9 @@ historyBtn.addEventListener('click', function() {
 
 document.getElementById('clear-input').addEventListener('click', function() {
     clearInputFields('noakhali-donate-input');
-})
+});
+
+
+document.getElementById('clear-input-feni').addEventListener('click', function() {
+    clearInputFields('feni-donate-input');
+});
