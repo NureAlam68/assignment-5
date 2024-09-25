@@ -21,3 +21,8 @@ historyBtn.addEventListener('click', function() {
     donationBtn.classList.remove('bg-color-one');
     donationBtn.classList.add('bg-white');
 });
+
+
+document.getElementById('clear-input').addEventListener('click', function() {
+    clearInputFields('noakhali-donate-input');
+})
