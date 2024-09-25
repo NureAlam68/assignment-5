@@ -13,7 +13,7 @@ function showSectionById(id) {
 
 function getInputValueById(id) {
     const inputValue = document.getElementById(id).value;
-    const inputNumber = parseFloat(inputValue);
+    const inputNumber = Number(inputValue);
     return inputNumber;
 }
 
@@ -22,7 +22,7 @@ function getInputValueById(id) {
 
 function getTextValueById(id) {
     const textValue = document.getElementById(id).innerText;
-    const textNumber = parseFloat(textValue);
+    const textNumber = Number(textValue);
     return textNumber;
 }
 

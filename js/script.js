@@ -48,9 +48,11 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
 document.getElementById('feni-donate-btn').addEventListener('click', function(event) {
     event.preventDefault();
 
-    const addMoneyFeni = getInputValueById('feni-donate-input');
+    const addMoneyF = getInputValueById('feni-donate-input');
     const feniBalance = getTextValueById('feni-balance');
     const accountBalanceFeni = getTextValueById('account-balance');
+
+    const addMoneyFeni = Number(addMoneyF);
 
     if(isNaN(addMoneyFeni) || addMoneyFeni > accountBalanceFeni || addMoneyFeni <= 0 || addMoneyFeni === '') {
         alert('Invalid donation amount !');
