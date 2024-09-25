@@ -1,7 +1,7 @@
 const donationBtn = document.getElementById('donation-btn');
 const historyBtn = document.getElementById('history-btn');
 
-// for change section
+// for change section and change button background color
 
 donationBtn.addEventListener('click', function() {
     showSectionById('donation-section');
@@ -21,6 +21,7 @@ historyBtn.addEventListener('click', function() {
     donationBtn.classList.remove('bg-color-one');
     donationBtn.classList.add('bg-white');
 });
+
 
 
 document.getElementById('clear-input').addEventListener('click', function() {

@@ -27,6 +27,15 @@ function getTextValueById(id) {
 }
 
 
+//show modal
+
+function openModal(id) {
+    document.getElementById(id).showModal();
+}
+
+
+
+
 // for clear input value
 
 function clearInputFields(id) {

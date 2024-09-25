@@ -33,6 +33,8 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
         div.querySelector('#date-time').innerText = "Date: " + newDate;
 
         document.getElementById('history-section').appendChild(div);
+
+        openModal('modal-one');
     }
 });
 
@@ -74,6 +76,8 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
         div.querySelector('#date-time').innerText = "Date: " + newDate;
 
         document.getElementById('history-section').appendChild(div);
+
+        openModal('modal-two');
     }
 });
 
@@ -114,5 +118,7 @@ document.getElementById('aid-donate-btn').addEventListener('click', function(eve
         div.querySelector('#date-time').innerText = "Date: " + newDate;
 
         document.getElementById('history-section').appendChild(div);
+
+        openModal('modal-three');
     }
 });
